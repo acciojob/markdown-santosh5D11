@@ -1,12 +1,54 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+* {
+  box-sizing: border-box;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #e8eaf1;
+  padding: 20px;
+}
+
+.editor-container {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.editor-section,
+.preview-section {
+  width: 50%;
+  padding: 15px;
+}
+
+.textarea {
+  width: 100%;
+  height: 400px;
+  padding: 15px;
+  font-size: 18px;
+  resize: none;
+}
+
+.preview {
+  width: 100%;
+  min-height: 400px;
+  padding: 15px;
+  background: white;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    flex-direction: column;
+  }
+
+  .editor-section,
+  .preview-section {
+    width: 100%;
+  }
 }
